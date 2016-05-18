@@ -1,3 +1,25 @@
+
+@font-face {
+    font-family: Proximanova-light;
+    src: url(font/ProximaNova-Light.otf);
+}
+
+@font-face {
+    font-family: Proximanova-regular;
+    src: url(font/ProximaNova-Regular.otf);
+}
+
+@font-face {
+    font-family: Proximanova-semibold;
+    src: url(font/ProximaNova-Semibold.ttf);
+}
+
+@font-face {
+    font-family: Proximanova-bold;
+    src: url(font/ProximaNova-Bold.otf);
+}
+
+
 body {
     display:flex;
     flex-flow: column nowrap;
@@ -9,7 +31,7 @@ body {
     background-position: center center;
     background-color: #000;
     height: 100vh;
-    font-family:'Montserrat';
+    font-family:'Proximanova-regular', Montserrat, Helvetica;
     font-weight: normal;
     letter-spacing: 1px;  
     line-height: auto;
@@ -30,6 +52,14 @@ a, a:hover, a: visited, a:active {
     padding-right: 150px;
 }
 
+h1{
+    font-family:'Proximanova-bold';
+}
+
+h3{
+    font-family:'Proximanova-semibold';
+}
+
 p {
     width: 70%;
     
@@ -41,6 +71,7 @@ p {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 200px;
+    margin-top: 10px;
     
 }
 
