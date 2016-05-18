@@ -30,7 +30,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: #000;
-    height: 100vh;
+    height: 90vh;
     font-family:'Proximanova-regular', Montserrat, Helvetica;
     font-weight: normal;
     letter-spacing: 1px;  
@@ -47,13 +47,14 @@ a, a:hover, a: visited, a:active {
     flex-flow : column nowrap;
     background-color: none;
     color: white;
-    width: 70%;
+    width: 65%;
     height: 50%;
-    padding-right: 150px;
+    padding-right: 130px;
 }
 
 h1{
     font-family:'Proximanova-bold';
+    margin: 0px;
 }
 
 h3{
