@@ -1,0 +1,72 @@
+body {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family:'Montserrat';
+    font-weight: normal;
+    letter-spacing: 1px;  
+    line-height: auto;
+}
+
+a, a:hover, a: visited, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow : column nowrap;
+    background-color: none;
+    color: white;
+    width: 70%;
+    height: 50%;
+    padding-right: 150px;
+}
+
+p {
+    width: 70%;
+    
+}
+
+
+.button-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 200px;
+    
+}
+
+.button {
+    font-size: 20px;
+    border: 1px solid none;
+    padding: 10px;
+    color: white;
+}
+
+.button:hover {
+    color:#984752;
+    cursor: pointer;
+}
+
+.email:hover {
+    color: #012983;
+    
+}
+.ig:hover {
+    color:#3f729b;
+    }
+
+.dribbble:hover {
+    color:#ea4c89;
+}
+
+.behance:hover {
+    color:#1769ff;
+}
