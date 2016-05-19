@@ -114,4 +114,8 @@ p {
     padding-top: 50px;
     
     }
+    
+    p {
+    width: 75%;
+    }
 }
