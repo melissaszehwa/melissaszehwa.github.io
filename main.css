@@ -111,11 +111,11 @@ p {
     width: 80%;
     height: auto;
     padding-right: 0px;
-    padding-top: 50px;
+    padding-top: 30px;
     
     }
     
     p {
-    width: 75%;
+    width: 100%;
     }
 }
