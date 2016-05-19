@@ -103,3 +103,14 @@ p {
 .behance:hover {
     color:#1769ff;
 }
+
+@media all and (max-width: 768px){
+    
+.container {
+    
+    width: 65%;
+    height: auto;
+    padding-right: 0px;    
+    
+    }
+}
