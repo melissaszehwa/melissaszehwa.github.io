@@ -107,7 +107,7 @@ p {
 @media all and (max-width: 768px){
     
 .container {
-    
+    font-size: 14px;
     width: 65%;
     height: auto;
     padding-right: 0px;    
