@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: Circular-Book;
+    src: url('font/lineto-circular-pro-book.ttf');
+}
+
+@font-face {
+    font-family: Circular-Bold;
+    src: url('font/lineto-circular-pro-bold.ttf');
+}
+
+h1{
+	font-size: 35px;
+	font-weight: 400;
+
+	span{
+		font-family: "Circular-Bold";
+	}
+}
+
+
+a{
+	color: $dark-text;
+	text-decoration: none;
+	font-family: "Circular-Bold";
+	border-bottom: 1px solid $dark-text;
+}

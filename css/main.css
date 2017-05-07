@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Circular-Book;
+  src: url("font/lineto-circular-pro-book.ttf"); }
+
+@font-face {
+  font-family: Circular-Bold;
+  src: url("font/lineto-circular-pro-bold.ttf"); }
+
+h1 {
+  font-size: 35px;
+  font-weight: 400; }
+  h1 span {
+    font-family: "Circular-Bold"; }
+
+a {
+  color: #314555;
+  text-decoration: none;
+  font-family: "Circular-Bold";
+  border-bottom: 1px solid #314555; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Circular-Book", Helvetica, sans-serif;
+  font-size: 16px;
+  background: #FFFFFF;
+  color: #314555; }
+
+.container {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.header {
+  height: 450px;
+  background: #FFFFFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header__links {
+    margin: 60px 0 0 0;
+    padding: 0; }
+    .header__links li {
+      display: inline-block;
+      list-style: none;
+      color: #9B9B9B; }
+      .header__links li.title {
+        font-size: 14px; }
+      .header__links li a {
+        color: #9B9B9B;
+        border: 0;
+        font-size: 25px; }

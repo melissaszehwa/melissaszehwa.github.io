@@ -1,0 +1,15 @@
+
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	font-family: "Circular-Book", Helvetica, sans-serif;
+	font-size: 16px;
+	background: $white;
+	color: $dark-text;
+}

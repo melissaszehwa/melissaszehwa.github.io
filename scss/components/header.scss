@@ -1,0 +1,29 @@
+
+.header{
+	height: 450px;
+	background: $white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+
+	&__links{
+		margin: 60px 0 0 0;
+		padding: 0;
+
+		li{
+			display: inline-block;
+			list-style: none;
+			color: $gray-text;
+
+			&.title{
+				font-size: 14px;
+			}
+
+			a{
+				color: $gray-text;
+				border: 0;
+				font-size: 25px;
+			}
+		}
+	}
+}
