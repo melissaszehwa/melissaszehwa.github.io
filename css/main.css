@@ -12,6 +12,18 @@ h1 {
   h1 span {
     font-family: "Circular-Bold"; }
 
+h3 {
+  font-size: 20px;
+  font-family: "Circular-Bold";
+  margin: 10px 0;
+  line-height: 28px; }
+
+h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0; }
+
 a {
   color: #314555;
   text-decoration: none;
@@ -35,6 +47,13 @@ body {
   width: 80%;
   max-width: 1080px;
   margin: 0 auto; }
+  .container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .header {
   height: 450px;
@@ -52,10 +71,191 @@ body {
     .header__links li {
       display: inline-block;
       list-style: none;
-      color: #9B9B9B; }
+      color: #9B9B9B;
+      margin-right: 54px;
+      line-height: 25px; }
       .header__links li.title {
-        font-size: 14px; }
+        font-size: 14px;
+        margin-right: 34px;
+        letter-spacing: 3px; }
+      .header__links li:last-child {
+        margin-right: 0; }
       .header__links li a {
         color: #9B9B9B;
         border: 0;
         font-size: 25px; }
+        .header__links li a svg {
+          position: relative;
+          top: 5px; }
+        .header__links li a:hover {
+          color: #314555; }
+          .header__links li a:hover svg #About {
+            stroke: #314555; }
+
+.showcase .container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.showcase a.showcase__box {
+  text-decoration: none;
+  border: 0; }
+  .showcase a.showcase__box:hover .showcase__content {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+    .showcase a.showcase__box:hover .showcase__content .link {
+      opacity: 1; }
+
+.showcase__box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 20px;
+  background: #314555;
+  border-radius: 8px;
+  height: 390px;
+  margin-bottom: 20px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative; }
+  .showcase__box--large {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -ms-flex-preferred-size: 61%;
+        flex-basis: 61%; }
+    .showcase__box--large .showcase__content {
+      width: 60%;
+      height: 90px; }
+
+.showcase__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat; }
+
+.showcase__content {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #FFFFFF;
+  margin-top: 20px;
+  height: 120px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .showcase__content .link {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .showcase__content .link h4 {
+      line-height: 15px;
+      margin-right: 8px; }
+    .showcase__content .link img {
+      width: 15px;
+      height: 15px; }
+
+.showcase--boost {
+  background: #F03D3D;
+  background: -webkit-linear-grasdient(#F03D3D, #E13636);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F03D3D), to(#E13636));
+  background: linear-gradient(#F03D3D, #E13636); }
+  .showcase--boost .showcase__image {
+    background-image: url("../images/boost/boost_showcase.png");
+    background-position: top 35% right 20px;
+    background-size: 380px auto; }
+
+.showcase--hellogold {
+  background: #FFC908;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFC908), to(#FFB307));
+  background: linear-gradient(#FFC908, #FFB307); }
+  .showcase--hellogold .showcase__image {
+    background-image: url("../images/hellogold/hellogold_showcase.png");
+    background-position: top 20px right;
+    background-size: auto 200px; }
+
+.showcase--ombre {
+  background: #9C3C57;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9C3C57), to(#3B3864));
+  background: linear-gradient(#9C3C57, #3B3864); }
+
+.showcase--merdeka {
+  background: #ECEBE6; }
+  .showcase--merdeka .showcase__content {
+    color: #314555; }
+  .showcase--merdeka .showcase__image {
+    background-image: url("../images/projectmerdeka/projectmerdeka_showcase.png");
+    background-position: top 20px center;
+    background-size: 80% auto; }
+
+.showcase--vltlabs {
+  background: #5B247A;
+  background: linear-gradient(125deg, #5B247A, #1BCEDF); }
+  .showcase--vltlabs .showcase__image {
+    background-image: url("../images/vltlabs/vltlabs_showcase.png");
+    background-position: top 25% center;
+    background-size: 120px auto; }
+
+.showcase--avventura {
+  background: #FF7676;
+  background: linear-gradient(125deg, #FF7676, #F54EA2); }
+
+.showcase--crowdsails {
+  background: #69CADB;
+  background: -webkit-gradient(linear, left top, left bottom, from(#69CADB), to(#0AB0C6));
+  background: linear-gradient(#69CADB, #0AB0C6); }
+
+.showcase--producky {
+  background: #FCE38A;
+  background: linear-gradient(125deg, #FCE38A, #F38181); }
+
+.showcase--camporama {
+  background: #243841;
+  background: linear-gradient(125deg, #243841, #1E5C7A); }
+
+.showcase--supahands {
+  background: #184E68;
+  background: linear-gradient(125deg, #184E68, #57CA85); }
+
+.showcase--supahands {
+  background: #5B247A;
+  background: linear-gradient(125deg, #5B247A, #1BCEDF); }
+
+.footer {
+  margin-top: 180px; }
+  .footer .container {
+    border-top: 1px solid #D8D8D8;
+    padding: 20px 0 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__logo {
+    border: 0;
+    font-size: 30px; }
+  .footer__links {
+    margin: 0;
+    padding: 0; }
+    .footer__links li {
+      display: inline-block; }
+      .footer__links li a {
+        color: #9B9B9B;
+        border: 0;
+        font-size: 20px;
+        margin-left: 40px; }
+        .footer__links li a svg {
+          position: relative;
+          top: 4px; }
+        .footer__links li a:hover {
+          color: #314555; }
+          .footer__links li a:hover svg #About {
+            stroke: #314555; }

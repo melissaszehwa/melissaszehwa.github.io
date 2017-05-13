@@ -14,15 +14,36 @@
 			display: inline-block;
 			list-style: none;
 			color: $gray-text;
+			margin-right: 54px;
+			line-height: 25px;
 
 			&.title{
 				font-size: 14px;
+				margin-right: 34px;
+				letter-spacing: 3px;
+			}
+
+			&:last-child{
+				margin-right: 0;
 			}
 
 			a{
 				color: $gray-text;
 				border: 0;
 				font-size: 25px;
+
+				svg{
+					position: relative;
+					top: 5px;
+				}
+
+				&:hover{
+					color: $dark-text;
+
+					svg #About{
+						stroke: $dark-text;
+					}
+				}
 			}
 		}
 	}
