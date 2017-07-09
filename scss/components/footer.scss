@@ -11,6 +11,7 @@
 	&__logo{
 		border: 0;
 		font-size: 30px;
+		font-family: "Circular-Bold";
 	}
 
 	&__links{
@@ -43,3 +44,26 @@
 	}
 
 }
+
+
+
+@media all and (max-width: 768px){
+
+	.footer{
+		&__links{
+			li a{
+				margin-left: 20px;
+				font-size: 18px;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+

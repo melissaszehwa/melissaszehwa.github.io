@@ -48,3 +48,38 @@
 		}
 	}
 }
+
+
+
+@media all and (max-width: 768px){
+
+	.header{
+		&__links{
+			li{
+				margin-right: 20px;
+				margin-bottom: 20px;
+
+				&.title{
+					display: block;
+					margin-right: 0;
+					margin-bottom: 20px;
+				}
+
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
