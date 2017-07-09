@@ -1,0 +1,17 @@
+
+.navbar{
+	background: $white;
+	height: 70px;
+	border-bottom: 1px solid $gray;
+
+	.container--flex{
+		align-items: center;
+		height: 70px;
+	}
+
+	&__logo{
+		border: 0;
+		font-size: 30px;
+		font-family: "Circular-Bold";
+	}
+}
